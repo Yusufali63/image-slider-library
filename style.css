@@ -1,0 +1,304 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #10121b;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    border-bottom: 1px solid #292b38;
+}
+
+header h2 {
+    color: #a995ff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a995ff;
+}
+
+main {
+    width: 84%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.intro {
+    text-align: center;
+    padding: 65px 0 35px;
+}
+
+.intro p:first-child {
+    color: #a995ff;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.intro h1 {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.intro h1 span {
+    color: #a995ff;
+}
+
+.intro p:last-child {
+    color: #a5a7b5;
+}
+
+/* Image slider */
+
+.slider {
+    background: #191c29;
+    border: 1px solid #303344;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.slider-viewport {
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 65px 35px 30px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+}
+
+.caption p {
+    color: #c7baff;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.caption h2 {
+    font-size: 34px;
+}
+
+/* Previous and Next buttons */
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    background: rgba(16, 18, 27, 0.85);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.arrow:hover {
+    background: #a995ff;
+    color: #10121b;
+    border-color: #a995ff;
+}
+
+.prev {
+    left: 18px;
+}
+
+.next {
+    right: 18px;
+}
+
+.counter {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 7px 12px;
+    background: rgba(16, 18, 27, 0.8);
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+/* Navigation dots */
+
+.slider-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    gap: 15px;
+}
+
+.slider-bottom p {
+    color: #a5a7b5;
+    font-size: 13px;
+}
+
+.slider-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #55596a;
+    cursor: pointer;
+}
+
+.dot.active {
+    width: 28px;
+    background: #a995ff;
+}
+
+/* About section */
+
+.about {
+    text-align: center;
+    max-width: 650px;
+    margin: 75px auto;
+}
+
+.about h2 {
+    margin-bottom: 12px;
+}
+
+.about p {
+    color: #a5a7b5;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 1px solid #292b38;
+    color: #a5a7b5;
+}
+
+footer strong {
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 12px 0;
+}
+
+#copyright-button {
+    margin-top: 8px;
+    padding: 8px 13px;
+    border: 1px solid #414458;
+    border-radius: 7px;
+    background: transparent;
+    color: #a5a7b5;
+    cursor: pointer;
+}
+
+#copyright-button:hover {
+    color: white;
+    border-color: #a995ff;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .intro {
+        padding: 45px 0 25px;
+    }
+
+    .intro h1 {
+        font-size: 34px;
+    }
+
+    .slider-viewport {
+        height: 380px;
+    }
+
+    .caption {
+        padding: 50px 20px 25px;
+    }
+
+    .caption h2 {
+        font-size: 27px;
+    }
+
+ 
+.arrow {
+    padding: 10px 12px;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.prev {
+    left: 8px;
+}
+
+.next {
+    right: 8px;
+}
+
+
+    .slider-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .about {
+        margin: 55px auto;
+    }
+}

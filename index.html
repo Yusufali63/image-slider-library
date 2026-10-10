@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image Slider | Yusuf Ali</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h2>ImageSlider.</h2>
+        <a href="https://github.com/Yusufali63"
+           target="_blank"
+           rel="noopener noreferrer">GitHub</a>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>MY IMAGE GALLERY</p>
+            <h1>Explore the <span>world.</span></h1>
+            <p>A simple image slider built with HTML, CSS and JavaScript.</p>
+        </section>
+
+        <section class="slider">
+
+            <div class="slider-viewport">
+                <div class="slider-track">
+
+                    <div class="slide">
+                        <img src="images/architecture.jpg"
+                             alt="Modern architecture">
+                        <div class="caption">
+                            <p>01 / ARCHITECTURE</p>
+                            <h2>Modern Designs</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/japan.jpg"
+                             alt="Traditional Japanese street">
+                        <div class="caption">
+                            <p>02 / JAPAN</p>
+                            <h2>Discover Japan</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/beach.jpg"
+                             alt="Beautiful tropical beach">
+                        <div class="caption">
+                            <p>03 / BEACH</p>
+                            <h2>Ocean Escape</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/desert.jpg"
+                             alt="Golden desert landscape">
+                        <div class="caption">
+                            <p>04 / DESERT</p>
+                            <h2>Golden Horizons</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/mountain.jpg"
+                             alt="Beautiful mountain landscape">
+                        <div class="caption">
+                            <p>05 / MOUNTAINS</p>
+                            <h2>Mountain Adventures</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/forest.jpg"
+                             alt="Green forest">
+                        <div class="caption">
+                            <p>06 / FOREST</p>
+                            <h2>Into the Wild</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/city.jpg"
+                             alt="Beautiful city skyline">
+                        <div class="caption">
+                            <p>07 / CITY</p>
+                            <h2>City Lights</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/waterfall.jpg"
+                             alt="Waterfall surrounded by nature">
+                        <div class="caption">
+                            <p>08 / WATERFALL</p>
+                            <h2>Nature's Beauty</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/lake.jpg"
+                             alt="Peaceful lake">
+                        <div class="caption">
+                            <p>09 / LAKE</p>
+                            <h2>Peaceful Waters</h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/sunset.jpg"
+                             alt="Beautiful sunset">
+                        <div class="caption">
+                            <p>10 / SUNSET</p>
+                            <h2>Chasing Sunsets</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="arrow prev" aria-label="Previous image">
+                    <span>&#10094;</span>
+                    <span>Previous</span>
+                </button>
+
+                <button class="arrow next" aria-label="Next image">
+                    <span>Next</span>
+                    <span>&#10095;</span>
+                </button>
+
+                <div class="counter">
+                    <span id="current">01</span> /
+                    <span id="total">10</span>
+                </div>
+            </div>
+
+            <div class="slider-bottom">
+                <div class="slider-dots"></div>
+                <p>Use Previous or Next to explore</p>
+            </div>
+
+        </section>
+
+        <section class="about">
+            <h2>About This Project</h2>
+            <p>
+                This image slider uses HTML to structure the page,
+                CSS to style the gallery, and JavaScript to change
+                images. It also includes Previous and Next buttons,
+                navigation dots, and infinite looping.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by <strong>Yusuf Ali</strong></p>
+
+        <div class="footer-links">
+            <a href="mailto:yusufali.2063@gmail.com">Contact Me</a>
+            <a href="https://github.com/Yusufali63"
+               target="_blank"
+               rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        <button id="copyright-button">
+            © 2026 Yusuf Ali — Copyright
+        </button>
+    </footer>
+
+</body>
+</html>
